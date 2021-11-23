@@ -11,7 +11,7 @@ class Car {
             model: this.model
         }
     }
-    kuroTikrinimas() {
+    checkingFuel() {
         if (this.fuelType === 'Diesel') {
             return "Automobilis varomas dyzeliu";
         } else if (this.fuelType === 'Petrol') {
@@ -23,4 +23,4 @@ class Car {
 }
 const car = new Car ('BMW', 'X5', 'Black', 'Diesel');
 console.log(car.markModel());
-console.log(car.kuroTikrinimas());
+console.log(car.checkingFuel());

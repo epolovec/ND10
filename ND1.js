@@ -12,7 +12,7 @@ Car.prototype.markModel = function () {
     }
 }
 
-Car.prototype.kuroTikrinimas = function () {
+Car.prototype.checkingFuel = function () {
     if (this.fuelType === 'Diesel') {
         return "Automobilis varomas dyzeliu";
     } else if (this.fuelType === 'Petrol') {
@@ -24,4 +24,4 @@ Car.prototype.kuroTikrinimas = function () {
 
 const car = new Car ('BMW', 'X5', 'Black', 'Diesel');
 console.log(car.markModel());
-console.log(car.kuroTikrinimas());
+console.log(car.checkingFuel());
